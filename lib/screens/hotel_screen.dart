@@ -13,11 +13,11 @@ class HotelScreen extends StatelessWidget {
     final size = AppLayout.getSize(context);
     return Container(
       width: size.width * 0.6,
-      height: 350,
-      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 17),
-      margin: const EdgeInsets.only(right: 17, top: 5),
+      height: AppLayout.getHeight(350),
+      padding:  EdgeInsets.symmetric(horizontal: AppLayout.getWidth(15), vertical: AppLayout.getHeight(17)),
+      margin:  EdgeInsets.only(right: AppLayout.getWidth(17), top: AppLayout.getHeight(5)),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(AppLayout.getHeight(24)),
           color: Styles.primaryColor,
           boxShadow: [
             BoxShadow(
@@ -28,9 +28,9 @@ class HotelScreen extends StatelessWidget {
           ]),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Container(
-          height: 180,
+          height: AppLayout.getHeight(180),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(AppLayout.getHeight(12)),
             color: Styles.primaryColor,
             image: DecorationImage(
               fit: BoxFit.cover,
