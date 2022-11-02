@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(20)),
             child: const AppDoubleTextwidget(
-                    bigText: 'Hotels', smallText: 'View all'),
+                    bigText: 'Upcoming Flights', smallText: 'View all'),
           ),
           const Gap(15),
           SingleChildScrollView(
