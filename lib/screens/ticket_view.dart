@@ -226,19 +226,19 @@ class TicketView extends StatelessWidget {
                     children: [
                       ColumnLayout(
                         alignment: CrossAxisAlignment.start,
-                        isColor: false,
+                        isColor: isColor,
                         firstText: ticket['date'],
                         secondText: 'Date',
                       ),
                       ColumnLayout(
                         alignment: CrossAxisAlignment.center,
-                        isColor: false,
+                        isColor: isColor,
                         firstText: ticket['departure_time'],
                         secondText: 'Departure time',
                       ),
                       ColumnLayout(
                         alignment: CrossAxisAlignment.end,
-                        isColor: false,
+                        isColor: isColor,
                         firstText: ticket['number'].toString(),
                         secondText: 'Number',
                       ),
