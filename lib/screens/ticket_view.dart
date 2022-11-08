@@ -29,7 +29,7 @@ class TicketView extends StatelessWidget {
             */
             Container(
               decoration: BoxDecoration(
-                color: isColor == null ? Color(0xFF526799) : Colors.white,
+                color: isColor == null ? const Color(0xFF526799) : Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(AppLayout.getHeight(21)),
                   topRight: Radius.circular(AppLayout.getHeight(21)),
@@ -55,7 +55,7 @@ class TicketView extends StatelessWidget {
                           child: Stack(children: [
                         SizedBox(
                             height: AppLayout.getHeight(24),
-                            child: AppLayoutBuilderWidget(
+                            child:const  AppLayoutBuilderWidget(
                               sections: 10,
                               width: 3,
                             )),
@@ -65,7 +65,7 @@ class TicketView extends StatelessWidget {
                             child: Icon(Icons.local_airport_rounded,
                                 color: isColor == null
                                     ? Colors.white
-                                    : Color(0xFF8ACCF7)),
+                                    :const  Color(0xFF8ACCF7)),
                           ),
                         ),
                       ])),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
+
 import 'package:ticket_booking_app/screens/ticket_view.dart';
 import 'package:ticket_booking_app/utils/app_info_list.dart';
 import 'package:ticket_booking_app/utils/app_layout.dart';
@@ -68,7 +68,7 @@ class TicketScreen extends StatelessWidget {
                   ],
                 ),
                 Gap(AppLayout.getHeight(15)),
-                AppLayoutBuilderWidget(
+                const AppLayoutBuilderWidget(
                   sections: 15,
                   isColor: false,
                   width: 5,
@@ -92,7 +92,7 @@ class TicketScreen extends StatelessWidget {
                   ],
                 ),
                 Gap(AppLayout.getHeight(15)),
-                AppLayoutBuilderWidget(
+                const AppLayoutBuilderWidget(
                   sections: 15,
                   isColor: false,
                   width: 5,
@@ -101,12 +101,6 @@ class TicketScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // ColumnLayout(
-                    //   alignment: CrossAxisAlignment.start,
-                    //   isColor: false,
-                    //   firstText: '8893 4775 33',
-                    //   secondText: 'Payment method',
-                    // ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

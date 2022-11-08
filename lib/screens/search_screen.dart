@@ -80,7 +80,7 @@ class SearchScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius:
                             BorderRadius.circular(AppLayout.getHeight(12)),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             fit: BoxFit.cover,
                             image: AssetImage('assets/image/sit.jpg'))),
                   ),
@@ -99,7 +99,7 @@ class SearchScreen extends StatelessWidget {
                         width: size.width * 0.44,
                         height: AppLayout.getHeight(174),
                         decoration: BoxDecoration(
-                          color: Color(0xFF3AB8B8),
+                          color:const  Color(0xFF3AB8B8),
                           borderRadius:
                               BorderRadius.circular(AppLayout.getHeight(18)),
                         ),
@@ -131,7 +131,7 @@ class SearchScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(
-                                  width: 18, color: Color(0xFF189999)),
+                                  width: 18, color:const  Color(0xFF189999)),
                               color: Colors.transparent),
                         ),
                       ),
